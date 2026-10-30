@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Основные SEO мета-теги для продвижения по запросу "Денис Криштопа" -->
-  <title>Денис Криштопа | IT &amp; Технологии — dkrishtopa.com</title>
-  <meta name="description" content="Денис Криштопа — персональный сайт. Информационные технологии, проектирование систем, цифровая трансформация и надежная архитектура.">
+  <!-- Основные SEO мета-теги: оптимизация под запрос "Денис Криштопа" -->
+  <title>Денис Криштопа | IT</title>
+  <meta name="description" content="Денис Криштопа — персональная страница. IT.">
   <meta name="author" content="Денис Криштопа">
   <link rel="canonical" href="https://dkrishtopa.com/">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-  <!-- Open Graph мета-теги для соцсетей и мессенджеров -->
+  <!-- Open Graph разметка для соцсетей и мессенджеров -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:url" content="https://dkrishtopa.com/">
-  <meta property="og:title" content="Денис Криштопа | IT &amp; Технологии">
-  <meta property="og:description" content="Денис Криштопа — персональный сайт. Информационные технологии, проектирование систем, цифровая трансформация и надежная архитектура.">
+  <meta property="og:title" content="Денис Криштопа | IT">
+  <meta property="og:description" content="Денис Криштопа — персональная страница. IT.">
   <meta property="og:image" content="https://dkrishtopa.com/photo.jpg">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
 
   <!-- Микроразметка Schema.org для поисковых систем (Яндекс, Google) -->
   <script type="application/ld+json">
@@ -29,143 +29,101 @@
     "alternateName": ["Denis Krishtopa", "Криштопа Денис"],
     "url": "https://dkrishtopa.com",
     "image": "https://dkrishtopa.com/photo.jpg",
-    "jobTitle": "IT Specialist",
+    "jobTitle": "IT",
     "email": "mailto:me@dkrishtopa.com",
-    "sameAs": ["https://github.com/TheFoxKD", "https://t.me/TheFoxKD"],
-    "description": "Работаю в сфере информационных технологий: от проектирования сложных распределенных систем и интеграций до запуска цифровых продуктов."
+    "sameAs": [
+      "https://t.me/thefoxdk",
+      "https://github.com/TheFoxKD"
+    ]
   }
   </script>
 
-  <!-- Стили: строгая темная палитра, адаптивность, zero-dependency -->
+  <!-- Стили: строгий ультраминимализм, чистая типографика, адаптивность -->
   <style>
-    :root {
-      --bg-color: #0b0f19;
-      --card-bg: rgba(15, 23, 42, 0.75);
-      --border-color: rgba(255, 255, 255, 0.08);
-      --border-hover: rgba(255, 255, 255, 0.2);
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --btn-bg: #1e293b;
-      --btn-hover: #334155;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background-color: var(--bg-color);
-      color: var(--text-main);
+      background: #0b0f19;
+      color: #f8fafc;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       min-height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 1.5rem;
-      line-height: 1.6;
-    }
-    .profile-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 20px;
-      padding: 2.5rem;
-      max-width: 640px;
-      width: 100%;
       text-align: center;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     }
-    .avatar-wrapper {
-      margin-bottom: 1.5rem;
-      display: inline-block;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.85rem;
+      max-width: 320px;
+      width: 100%;
     }
     .avatar {
-      width: 140px;
-      height: 140px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      display: block;
-      border: 2px solid var(--border-hover);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
     h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.5rem;
-      color: var(--text-main);
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #f8fafc;
     }
-    .subtitle {
+    .tagline {
       font-size: 0.95rem;
       font-weight: 500;
-      color: var(--accent);
-      margin-bottom: 1.5rem;
-      letter-spacing: 0.02em;
+      color: #94a3b8;
+      letter-spacing: 0.04em;
+      margin-top: -0.4rem;
     }
-    .bio {
-      color: var(--text-muted);
-      font-size: 1rem;
-      line-height: 1.7;
-      margin-bottom: 2rem;
-      text-align: left;
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      width: 100%;
+      margin-top: 0.5rem;
     }
-    .contacts-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
-    }
-    .btn {
-      display: inline-flex;
+    .link-item {
+      display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0.8rem 1.2rem;
-      border-radius: 10px;
+      padding: 0.65rem 1rem;
+      color: #cbd5e1;
       text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      transition: all 0.2s ease;
-      background: var(--btn-bg);
-      color: var(--text-main);
-      border: 1px solid var(--border-color);
+      font-size: 0.92rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      transition: all 0.15s ease;
     }
-    .btn:hover {
-      background: var(--btn-hover);
-      border-color: var(--border-hover);
-      transform: translateY(-1px);
-    }
-    .btn-primary { background: #f8fafc; color: #0b0f19; font-weight: 600; }
-    .btn-primary:hover { background: #e2e8f0; color: #0b0f19; }
-    footer { color: #64748b; font-size: 0.8rem; margin-top: 0.5rem; }
-    @media (max-width: 480px) {
-      .profile-card { padding: 1.75rem 1.25rem; }
-      h1 { font-size: 1.75rem; }
-      .bio { font-size: 0.95rem; }
+    .link-item:hover {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
-  <!-- Главная карточка профиля -->
-  <main class="profile-card">
-    <div class="avatar-wrapper">
-      <img src="photo.jpg" alt="Денис Криштопа" class="avatar" width="140" height="140">
-    </div>
-
+  <!-- Минималистичная персональная визитка -->
+  <main class="card">
+    <img src="photo.jpg" alt="Денис Криштопа" class="avatar" width="120" height="120">
     <h1>Денис Криштопа</h1>
-    <p class="subtitle">Информационные технологии • Архитектура систем • Продуктовые решения</p>
+    <div class="tagline">IT</div>
 
-    <p class="bio">
-      Работаю в сфере информационных технологий: от проектирования сложных распределенных систем и интеграций до запуска цифровых продуктов. Фокусируюсь на надежности инженерных решений, системном подходе и создании устойчивой технологической ценности.
-    </p>
-
-    <!-- Кнопки и ссылки для связи -->
-    <div class="contacts-grid">
-      <a href="mailto:me@dkrishtopa.com" class="btn btn-primary" title="Написать на email">me@dkrishtopa.com</a>
-      <a href="https://t.me/TheFoxKD" target="_blank" rel="noopener noreferrer" class="btn" title="Telegram">Telegram</a>
-      <a href="https://github.com/TheFoxKD" target="_blank" rel="noopener noreferrer" class="btn" title="GitHub">GitHub</a>
-    </div>
-
-    <footer>
-      &copy; 2026 Денис Криштопа &bull; dkrishtopa.com
-    </footer>
+    <nav class="links" aria-label="Контакты">
+      <a href="mailto:me@dkrishtopa.com" class="link-item">me@dkrishtopa.com</a>
+      <a href="https://t.me/thefoxdk" target="_blank" rel="noopener noreferrer" class="link-item">telegram: @thefoxdk</a>
+      <a href="https://github.com/TheFoxKD" target="_blank" rel="noopener noreferrer" class="link-item">github: thefoxdk</a>
+    </nav>
   </main>
 </body>
 </html>
