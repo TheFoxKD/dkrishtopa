@@ -1,0 +1,8 @@
+# robots.txt для https://dkrishtopa.com
+# Разрешаем полную индексацию для всех поисковых систем (Яндекс, Google и др.)
+
+User-agent: *
+Allow: /
+
+# Карта сайта для ускоренного обхода страниц
+Sitemap: https://dkrishtopa.com/sitemap.xml
